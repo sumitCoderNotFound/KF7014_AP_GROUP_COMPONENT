@@ -3,7 +3,7 @@ import React from 'react';
 import Dashboard from '../components/Dashboard/Dashboard';
 
 const DashboardPage = () => {
-  console.log("DashboardPage loaded"); // ⬅️ Add this too!
+  console.log("DashboardPage loadeddata"); // ⬅️ Add this too!
   return (
     <div className="container">
       <Dashboard />
