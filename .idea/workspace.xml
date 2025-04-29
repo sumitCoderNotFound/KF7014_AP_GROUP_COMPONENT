@@ -4,54 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/AuthForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/ChangePassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/ForgotPasswordForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/LoginForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Auth/RegisterForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/Dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/DataView/DataView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/common/CustomButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/components/common/CustomInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/layouts/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/layouts/PublicLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/layouts/PublicLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/layouts/SidebarLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/layouts/SidebarLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/AdminDataPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/DataView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/ForgotPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/pages/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/routes/AdminRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/routes/AppRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/routes/ProtectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/services/apiService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/services/authService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-frontend/src/styles/global.css" afterDir="false" />
-    </list>
+    <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Northumbria University/Advanced programming/Assessment/Adv_programming_assessment",
     "nodejs_package_manager_path": "npm",
