@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="waterqualitymicroservice" />
+        <module name="API-Security" />
         <module name="gateway" />
         <module name="monitoringmicroservice" />
-        <module name="waterqualitymicroservice" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-Security" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="monitoringmicroservice" options="-parameters" />
       <module name="waterqualitymicroservice" options="-parameters" />

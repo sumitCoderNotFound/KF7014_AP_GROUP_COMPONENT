@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/prathamesh_services/gateway/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/monitoringmicroservice/pom.xml" />
         <option value="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/waterqualitymicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/API Security/API-Security/pom.xml" />
       </list>
     </option>
   </component>
