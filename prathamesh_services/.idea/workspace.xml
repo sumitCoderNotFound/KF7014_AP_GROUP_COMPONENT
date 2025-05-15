@@ -4,10 +4,118 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
+    <list default="true" id="c29aa60f-eda1-49bc-a44e-6f3512dc628f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/application.log.2025-05-10.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/waterservices/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/data/MyDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/data/MyDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/data/MyDB.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/data/River_Water_Quality_Monitoring.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/data/water-quality.water_quality.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/monitoring.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/MonitoringApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/config/MonitoringConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/controller/WaterMonitorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect$SQLiteUniqueDelegate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/entity/WaterQuality.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/exception/CsvProcessingException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/repository/WaterMonitorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/java/com/water/quality/monitoring/service/MonitorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/test/java/com/water/quality/monitoring/MonitoringApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/test/java/com/water/quality/monitoring/config/TestConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/test/java/com/water/quality/monitoring/exception/GlobalExceptionHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/bin/src/test/java/com/water/quality/monitoring/service/MonitorServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/data/MyDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/monitoring/data/MyDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/monitoring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/src/test/java/com/water/quality/monitoring/MonitoringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/src/test/java/com/water/quality/monitoring/config/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/src/test/java/com/water/quality/monitoring/exception/GlobalExceptionHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/monitoring/src/test/java/com/water/quality/monitoring/service/MonitorServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Adv_programming_assessment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.idea/gateway.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/assessment3/gateway/controller/GatewayFallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway/controller/GatewayFallbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/test/java/com/assessment3/gateway/GatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/test/java/com/assessment3/gateway/GatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-10.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-10.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-11.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-11.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-12.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-12.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-13.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-13.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-14.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-14.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-15.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-15.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-16.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-16.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-17.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-17.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-18.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-18.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/logs/application.log.2025-03-19.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/logs/application.log.2025-03-19.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/monitoring.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/MonitoringmicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/MonitoringmicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/controller/WaterReadingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/controller/WaterReadingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/model/WaterReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/model/WaterReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/repository/WaterReadingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/repository/WaterReadingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/service/WaterReadingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/service/WaterReadingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/main/resources/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/main/resources/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/MonitoringmicroserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/MonitoringmicroserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/repository/WaterReadingRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/repository/WaterReadingRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/service/WaterReadingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/service/WaterReadingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringmicroservice/monitoringmicroservice/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitoringmicroservice/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/WaterqualitymicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/WaterqualitymicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/WaterqualitymicroserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/WaterqualitymicroserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitymicroservice/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/service/WaterQualityServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/service/WaterQualityServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/apiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/apiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/monitoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/monitoring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/testing/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/testing/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,107 +123,108 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;PrathameshAlerts&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sumitCoderNotFound/KF7014_AP_GROUP_COMPONENT.git&quot;,
-    &quot;accountId&quot;: &quot;fb0d6c4f-d4da-466c-83cf-be9fbfa9553c&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2uaVi53NXoGfG0Zn6ajFsqyOpkg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2x8MiO9SCub4kPfy5X43FH1BBPU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.GatewayApplication.executor": "Run",
-    "Application.MonitoringmicroserviceApplication.executor": "Run",
-    "Application.WaterqualitymicroserviceApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "prathamesh__uni__branch",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Northumbria University/Advanced programming/Assessment/Adv_programming_assessment",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.MonitoringmicroserviceApplication.executor": "Run",
+    "Spring Boot.WaterqualitymicroserviceApplication.executor": "Run",
+    "git-widget-placeholder": "ridham__work__branch",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "onboarding.tips.debug.path": "/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/prathamesh_services/src/main/java/com/waterservices/Main.java",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19310345",
+    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.WaterqualitymicroserviceApplication">
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment3.gateway.GatewayApplication" />
-      <module name="gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assessment3.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonitoringmicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment.monitoringmicroservice.MonitoringmicroserviceApplication" />
-      <module name="monitoringmicroservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assessment.monitoringmicroservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaterqualitymicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment2.waterqualitymicroservice.WaterqualitymicroserviceApplication" />
-      <module name="waterqualitymicroservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assessment2.waterqualitymicroservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.WaterqualitymicroserviceApplication" />
-        <item itemvalue="Application.MonitoringmicroserviceApplication" />
-        <item itemvalue="Application.GatewayApplication" />
-      </list>
-    </recent_temporary>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assessment3.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitoringmicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="monitoringmicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assessment.monitoringmicroservice.MonitoringmicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterqualitymicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="waterqualitymicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assessment2.waterqualitymicroservice.WaterqualitymicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="" />
-      <created>1742486795502</created>
+      <changelist id="c29aa60f-eda1-49bc-a44e-6f3512dc628f" name="Changes" comment="" />
+      <created>1747315375970</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742486795502</updated>
-      <workItem from="1742486796747" duration="65000" />
+      <updated>1747315375970</updated>
+      <workItem from="1747315377062" duration="2215000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/waterservices/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

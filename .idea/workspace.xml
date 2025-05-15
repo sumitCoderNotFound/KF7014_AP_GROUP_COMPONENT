@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/group-frontend/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/group-frontend/src/pages/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/gateway/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/gateway/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/gateway/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/gateway/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/monitoringmicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/monitoringmicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/waterqualitymicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/waterqualitymicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,23 +25,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PrathameshAlerts"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PrathameshAlerts&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sumitCoderNotFound/KF7014_AP_GROUP_COMPONENT.git",
-    "accountId": "fb0d6c4f-d4da-466c-83cf-be9fbfa9553c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sumitCoderNotFound/KF7014_AP_GROUP_COMPONENT.git&quot;,
+    &quot;accountId&quot;: &quot;fb0d6c4f-d4da-466c-83cf-be9fbfa9553c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2uaVi53NXoGfG0Zn6ajFsqyOpkg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,9 +51,15 @@
     "Application.MonitoringmicroserviceApplication.executor": "Run",
     "Application.WaterqualitymicroserviceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging prathamesh__uni__branch",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "ridham__work__branch",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Northumbria University/Advanced programming/Assessment/Adv_programming_assessment",
+    "last_opened_file_path": "/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -101,6 +115,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,6 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1742486795502</updated>
       <workItem from="1742486796747" duration="65000" />
+      <workItem from="1747312146619" duration="48000" />
+      <workItem from="1747312710257" duration="1331000" />
     </task>
     <servers />
   </component>

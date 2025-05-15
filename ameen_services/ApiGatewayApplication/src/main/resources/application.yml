@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8181
 
 
 spring:
@@ -9,10 +9,10 @@ spring:
     gateway:
       routes:
         - id: monitoring
-          uri: http://localhost:8082
+          uri: http://localhost:8182
           predicates:
             - Path=/api/monitoring/**
         - id: quality_service
-          uri: http://localhost:8081
+          uri: http://localhost:8183
           predicates:
             - Path=/api/quality/**
