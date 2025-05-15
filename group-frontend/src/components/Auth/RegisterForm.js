@@ -1,16 +1,24 @@
 import React, { useState } from 'react';
+import authService from '../../services/authService';
 import CustomInput from '../common/CustomInput';
 import CustomButton from '../common/CustomButton';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './AuthForm.css';
 
 const RegisterForm = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    alert(`Registered with email: ${email}`);
+    try {
+      const res = await authService.register(username, password);
+      alert(res.message);
+      navigate('/login');
+    } catch (err) {
+      alert(err.message || 'Registration failed');
+    }
   };
 
   return (
@@ -19,11 +27,11 @@ const RegisterForm = () => {
         <h2 className="title">Register</h2>
         <form onSubmit={handleRegister}>
           <CustomInput
-            label="Email"
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            label="Username"
+            type="text"
+            placeholder="Enter username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
           <CustomInput
             label="Password"
