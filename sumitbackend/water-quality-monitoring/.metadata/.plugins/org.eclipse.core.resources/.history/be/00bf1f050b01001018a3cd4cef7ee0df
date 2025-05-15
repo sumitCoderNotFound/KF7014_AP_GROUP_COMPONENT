@@ -1,0 +1,5 @@
+package com.water.quality.monitoring.repository;
+
+public class WaterQualityRepository {
+
+}

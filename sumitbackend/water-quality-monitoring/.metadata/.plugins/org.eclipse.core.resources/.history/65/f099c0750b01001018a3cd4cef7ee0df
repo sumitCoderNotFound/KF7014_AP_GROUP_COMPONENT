@@ -1,0 +1,8 @@
+package com.water.quality.monitoring.config;
+
+public class Snippet {
+	public static void main(String[] args) {
+		SwaggerConfig.java
+	}
+}
+

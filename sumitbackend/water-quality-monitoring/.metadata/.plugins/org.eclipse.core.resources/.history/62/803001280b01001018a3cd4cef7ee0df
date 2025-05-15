@@ -1,0 +1,5 @@
+package com.water.quality.monitoring.controller;
+
+public class MonitoringController {
+
+}

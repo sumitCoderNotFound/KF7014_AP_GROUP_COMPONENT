@@ -1,0 +1,5 @@
+package com.water.quality.monitoring.model;
+
+public class WaterQualityRecord {
+
+}

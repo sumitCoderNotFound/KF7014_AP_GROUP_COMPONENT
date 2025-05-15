@@ -1,0 +1,5 @@
+package com.water.quality.monitoring.config;
+
+public class SwaggerConfig {
+
+}

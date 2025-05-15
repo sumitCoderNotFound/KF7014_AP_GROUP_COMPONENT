@@ -1,0 +1,22 @@
+package com.water.quality.monitoring.model;
+
+import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import java.time.LocalDateTime;
+
+@Document(collection = "water_quality_records")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class WaterQualityRecord {
+    @Id
+    private String id;
+    private double turbidity;
+    private double pH;
+    private double alkalinity;
+    private double conductivity;
+    private double nitrite;
+    private double totalDissolvedSolids;
+    private LocalDateTime timestamp;
+}

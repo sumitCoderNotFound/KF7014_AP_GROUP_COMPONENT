@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # 🟢 Monitoring Service (Connects to MongoDB Atlas)
+  monitoring-service:
+    build: ./monitoring-service
+    container_name: monitoring-service
+    ports:
+      - "8081:8080"  # Map container port 8080 to host 8081
+    networks:
+      - app-network
+    environment:
+      - SPRING_APPLICATION_NAME=monitoring-service
+      - SPRING_DATA_MONGODB_URI=mongodb+srv://sumitAssessment01:assessmentDbPassword@waterqualitycluster.uscez.mongodb.net/water_quality_db?retryWrites=true
+
+  # 🟠 Quality Check Service
+  quality-check-service:
+    build: ./quality-check-service
+    container_name: quality-check-service
+    ports:
+      - "8082:8080"  # Map container port 8080 to host 8082
+    depends_on:
+      monitoring-service:
+        condition: service_started
+    networks:
+      - app-network
+    environment:
+      - SPRING_APPLICATION_NAME=quality-check-service
+      - MONITORING_SERVICE_URL=http://monitoring-service:8080  # Internal service discovery
+
+  # 🔵 API Gateway
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8085:8080"  # Map container port 8080 to host 8085
+    depends_on:
+      - quality-check-service
+      - monitoring-service
+    networks:
+      - app-network
+    environment:
+      - SPRING_APPLICATION_NAME=api-gateway
+      - SPRING_CLOUD_GATEWAY_ROUTES[0].ID=monitoring-service
+      - SPRING_CLOUD_GATEWAY_ROUTES[0].URI=http://monitoring-service:8080
+      - SPRING_CLOUD_GATEWAY_ROUTES[0].PREDICATES=Path=/api/water-quality/**
+      - SPRING_CLOUD_GATEWAY_ROUTES[1].ID=quality-check-service
+      - SPRING_CLOUD_GATEWAY_ROUTES[1].URI=http://quality-check-service:8080
+      - SPRING_CLOUD_GATEWAY_ROUTES[1].PREDICATES=Path=/api/quality-check/**
+
+networks:
+  app-network:
+    driver: bridge
