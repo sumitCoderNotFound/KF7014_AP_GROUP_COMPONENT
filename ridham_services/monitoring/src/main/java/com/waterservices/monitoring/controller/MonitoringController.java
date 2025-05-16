@@ -1,13 +1,17 @@
 package com.waterservices.monitoring.controller;
 
 import com.waterservices.monitoring.model.WaterQuality;
+import com.waterservices.monitoring.security.TokenValidator;
 import com.waterservices.monitoring.service.MonitoringService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,10 +29,22 @@ public class MonitoringController {
 
     private final MonitoringService monitoringService;
 
+    @Autowired
+    private TokenValidator tokenValidator;
+
     public MonitoringController(MonitoringService monitoringService) {
         this.monitoringService = monitoringService;
     }
 
+    @GetMapping("/data")
+    public ResponseEntity<String> getData(@RequestHeader("Authorization") String authHeader) {
+        String token = authHeader.replace("Bearer ", "");
+
+        if (!tokenValidator.isTokenValid(token)) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid token");
+        }
+        return ResponseEntity.ok("Data from Monitoring Microservice");
+    }
     /**
      * Retrieves all water quality records.
      *

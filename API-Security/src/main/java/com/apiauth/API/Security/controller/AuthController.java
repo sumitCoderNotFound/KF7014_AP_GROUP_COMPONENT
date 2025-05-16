@@ -1,7 +1,5 @@
 package com.apiauth.API.Security.controller;
 
-
-
 import com.apiauth.API.Security.model.User;
 import com.apiauth.API.Security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +32,11 @@ public class AuthController {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello World";
+    }
 
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody AuthRequest request) {
@@ -99,5 +102,29 @@ public class AuthController {
     public ResponseEntity<Map<String, String>> logout() {
 
         return ResponseEntity.ok(Map.of("message", "Logged out successfully.")); // delete token on client side react js sumit
+    }
+
+    /**
+     * Validates a JWT token.
+     * This endpoint is used by other microservices to validate tokens.
+     * 
+     * @param authentication the authentication object containing the user details
+     * @return a response entity with validation result
+     */
+    @GetMapping("/validate")
+    public ResponseEntity<TokenValidationResponse> validateToken(Authentication authentication) {
+        if (authentication != null && authentication.isAuthenticated()) {
+            return ResponseEntity.ok(new TokenValidationResponse(
+                true,
+                authentication.getName(),
+                "Token is valid"
+            ));
+        } else {
+            return ResponseEntity.ok(new TokenValidationResponse(
+                false,
+                null,
+                "Invalid token"
+            ));
+        }
     }
 }
