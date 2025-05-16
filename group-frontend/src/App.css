@@ -9,6 +9,27 @@ body {
   box-sizing: border-box;
 }
 
+/* in index.css or App.css */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -38,7 +59,6 @@ nav a:hover {
 .container {
   max-width: 800px;
   margin: 30px auto;
-  padding: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   border-radius: 8px;

@@ -1,49 +1,115 @@
 import React, { useEffect, useState } from 'react';
-import config from '../../config.js'; // import global config
+import config from '../../config.js';
+import { getLatestSafetyFlag, getAllWaterQualityRecords } from '../../services/dashboardService';
+import StatusCard from '../common/StatusCard';
+import CustomTable from '../common/CustomTable';
+import SkeletonCard from '../common/SkeletonCard.js';
+
+const rivers = ['Tyne', 'Wear', 'Mersey', 'Thames'];
 
 const Dashboard = () => {
-  const [flag, setFlag] = useState(null);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
-  console.log("Dashboard rendered");
-  console.log("Mock mode?", config);
-  
+  const [selectedRiver, setSelectedRiver] = useState(null);
+  const [records, setRecords] = useState([]);
+
   useEffect(() => {
-    const fetchFlag = async () => {
+    const fetchAll = async () => {
+      setLoading(true);
       try {
-        if (config.useMock) {
-          console.log("Mocking flag data");
-          setFlag("Green");
-        } else {
-          const res = await fetch('http://localhost:8081/tyne/latest-flag');
-          const data = await res.json();
-          setFlag(data.flag);
+        const allData = {};
+        for (const river of rivers) {
+          const result = await getLatestSafetyFlag(); // replace later
+          allData[river] = result;
         }
+        setData(allData);
+        setSelectedRiver('Tyne'); // default selection
+        const defaultRecords = await getAllWaterQualityRecords();
+        setRecords(defaultRecords);
       } catch (err) {
         console.warn("API error:", err);
-        setFlag("Green");
       } finally {
         setLoading(false);
       }
     };
 
-    fetchFlag();
-    const interval = setInterval(fetchFlag, 30000);
-    return () => clearInterval(interval);
+    fetchAll();
   }, []);
+
+
+  const handleRiverClick = async (river) => {
+    setSelectedRiver(river);
+    const res = await getAllWaterQualityRecords(); // you can filter later per river
+    setRecords(res);
+  };
+
+  const tableColumns = [
+    { title: 'pH', key: 'pH', align: 'right' },
+    { title: 'Alkalinity', key: 'alkalinity', align: 'right' },
+    { title: 'TDS (Conductivity)', key: 'conductivity', align: 'right' },
+    { title: 'BOD', key: 'bod', align: 'right' },
+    { title: 'Nitrite', key: 'nitrite', align: 'right' },
+    { title: 'Copper Dissolved 1', key: 'copperDissolved1', align: 'right' },
+    { title: 'Copper Dissolved 2', key: 'copperDissolved2', align: 'right' },
+    { title: 'Iron Dissolved', key: 'ironDissolved', align: 'right' },
+    { title: 'Zinc Dissolved', key: 'zincDissolved', align: 'right' },
+    {
+      title: 'Timestamp',
+      key: 'timestamp',
+      align: 'left',
+      render: (value) =>
+        new Intl.DateTimeFormat('en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+        }).format(new Date(value)),
+    }
+
+  ];
+
 
   return (
     <div style={{ padding: '20px' }}>
-      <h2>Tyne River Safety Flag</h2>
+      <h2>🌊 Water Quality Dashboard</h2>
       {loading ? (
-        <p>Loading...</p>
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          {[...Array(4)].map((_, i) => (
+            <SkeletonCard key={i} />
+          ))}
+        </div>
       ) : (
-        <p>
-          Status:{" "}
-          <strong style={{ color: flag === 'Red' ? 'red' : 'green' }}>
-            {flag}
-          </strong>
-        </p>
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          {rivers.map((river) => (
+            <div key={river} onClick={() => handleRiverClick(river)} style={{ cursor: 'pointer' }}>
+              <StatusCard
+                river={river}
+                status={data[river]?.safetyFlag || 'Unknown'}
+                tds={data[river]?.calculatedTDS || null}
+                isActive={selectedRiver === river}
+              />
+
+            </div>
+          ))}
+        </div>
       )}
+
+      {selectedRiver && (
+        <div style={{ marginTop: '20px' }}>
+          <h3>
+            📋 Records for {selectedRiver} River ({records.length} entries)
+          </h3>
+          <CustomTable
+            columns={tableColumns}
+            data={records}
+            rowsPerPage={10}
+            loading={loading}
+          />
+
+        </div>
+      )}
+
     </div>
   );
 };

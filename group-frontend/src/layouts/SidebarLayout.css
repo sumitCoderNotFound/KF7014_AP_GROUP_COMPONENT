@@ -6,7 +6,7 @@
   
   .sidebar {
     width: 220px;
-    background-color: #004077;
+    background-color: #000;
     color: white;
     padding: 20px;
   }
@@ -63,7 +63,7 @@
   }
   
   .content-body {
-    padding: 30px;
+    /* padding: 30px; */
     overflow-y: auto;
   }
   

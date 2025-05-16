@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from '../pages/Login';
 import RegisterPage from '../pages/Register';
 import ForgotPasswordPage from '../pages/ForgotPassword';
-import DashboardPage from '../pages/Dashboard';
+import DashboardPage from '../pages/DashboardPage';
 import DataViewPage from '../pages/DataView';
 
 import ProtectedRoute from './ProtectedRoute';
@@ -12,6 +12,7 @@ import AdminRoute from './AdminRoute'; // NEW
 import PublicLayout from '../layouts/PublicLayout';
 import SidebarLayout from '../layouts/SidebarLayout';
 import AdminDataPage from '../pages/AdminDataPage';
+import UserProfile from '../pages/UserProfile';
 
 const AppRoutes = () => {
   return (
@@ -42,6 +43,14 @@ const AppRoutes = () => {
           element={
             <ProtectedRoute>
               <DataViewPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <UserProfile />
             </ProtectedRoute>
           }
         />

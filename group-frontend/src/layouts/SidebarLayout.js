@@ -1,14 +1,9 @@
 import React from 'react';
-import { NavLink, useNavigate, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import './SidebarLayout.css';
 
 const SidebarLayout = () => {
-    const navigate = useNavigate();
 
-    const handleLogout = () => {
-        localStorage.removeItem('token');
-        navigate('/login');
-    };
 
     return (
         <div className="layout-container">
@@ -28,8 +23,11 @@ const SidebarLayout = () => {
             <main className="main-content">
                 <header className="topbar">
                     <div className="profile-info">
-                        <span>👤 User</span>
-                        <button onClick={handleLogout}>Logout</button>
+                        <NavLink to="/profile" className="nav-link user-icon" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <img src="/user.png" alt="User" style={{ width: '30px', height: '30px', borderRadius: '50%' }} />
+                            <span>User</span>
+                        </NavLink>
+
                     </div>
                 </header>
                 <div className="content-body">
