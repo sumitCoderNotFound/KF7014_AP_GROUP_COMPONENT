@@ -3,6 +3,7 @@ package com.apiauth.API.Security.controller;
 import com.apiauth.API.Security.model.User;
 import com.apiauth.API.Security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -52,11 +53,13 @@ public class AuthController {
 
         // Generate token if authentication passed
         UserDetails user = userDetailsService.loadUserByUsername(request.getUsername());
-        String token = jwtService.generateToken(user.getUsername());
+        String accessToken = jwtService.generateToken(user.getUsername());
+        String refreshToken = jwtService.generateRefreshToken(user);
 
         return ResponseEntity.ok(Map.of(
                 "message", "Login successful",
-                "token", token
+                "accessToken", accessToken,
+                "refreshToken", refreshToken
         ));
     }
 
@@ -125,6 +128,30 @@ public class AuthController {
                 null,
                 "Invalid token"
             ));
+        }
+    }
+
+    @PostMapping("/refresh-token")
+    public ResponseEntity<?> refreshToken(@RequestBody Map<String, String> request) {
+        String refreshToken = request.get("refreshToken");
+
+        if (refreshToken == null) {
+            return ResponseEntity.badRequest().body("Missing refresh token");
+        }
+
+        try {
+            String username = jwtService.extractUsername(refreshToken);
+            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+
+            if (jwtService.isTokenValid(refreshToken, userDetails)) {
+                String newAccessToken = jwtService.generateToken(userDetails.getUsername());
+                return ResponseEntity.ok(Map.of("accessToken", newAccessToken));
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid refresh token");
+            }
+
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid or expired refresh token");
         }
     }
 }
