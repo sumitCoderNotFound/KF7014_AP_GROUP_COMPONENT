@@ -5,9 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ApiGatewayApplication/pom.xml" />
-        <option value="$PROJECT_DIR$/monitoring/pom.xml" />
-        <option value="$PROJECT_DIR$/waterquality/pom.xml" />
       </list>
     </option>
   </component>
