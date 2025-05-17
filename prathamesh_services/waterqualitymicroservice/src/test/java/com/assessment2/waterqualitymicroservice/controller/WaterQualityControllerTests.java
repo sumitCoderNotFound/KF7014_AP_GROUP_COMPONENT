@@ -11,6 +11,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.HashMap;
 import java.util.Map;
 
+import com.assessment2.waterqualitymicroservice.security.TokenValidationResponse;
+import com.assessment2.waterqualitymicroservice.security.TokenValidator;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -53,7 +55,11 @@ public class WaterQualityControllerTests {
 	private MockMvc mockMvc;
 
 	@MockBean
+	private TokenValidator tokenValidator;
+
+	@MockBean
 	private RestTemplate restTemplate;
+
 	
 	
 	/**
@@ -106,9 +112,13 @@ public class WaterQualityControllerTests {
 				any(),
 				eq(new ParameterizedTypeReference<Map<String, Object>>() {})
 				)).thenReturn(responseEntity);
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: sending GET request 
-		mockMvc.perform(get("/waterquality/records/latestflagged")) 
+		mockMvc.perform(get("/waterquality/records/latestflagged")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: verifying the response
 		.andExpect(status().isOk()) 
@@ -143,9 +153,13 @@ public class WaterQualityControllerTests {
 				any(),
 				eq(new ParameterizedTypeReference<Map<String, Object>>() {})
 				)).thenReturn(responseEntity);
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send the GET request.
-		mockMvc.perform(get("/waterquality/records/latestflagged"))
+		mockMvc.perform(get("/waterquality/records/latestflagged")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Verify if the response is 204 or No Content
 		.andExpect(status().isNoContent());
@@ -167,10 +181,13 @@ public class WaterQualityControllerTests {
 				any(),
 				eq(new ParameterizedTypeReference<Map<String, Object>>() {})
 				)).thenThrow(new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR,"Internal server error"));
-
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send the GET request
-		mockMvc.perform(get("/waterquality/records/latestflagged"))
+		mockMvc.perform(get("/waterquality/records/latestflagged")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Verify if the response is 500
 		.andExpect(status().isInternalServerError())
@@ -192,9 +209,13 @@ public class WaterQualityControllerTests {
 				any(),
 				eq(new ParameterizedTypeReference<Map<String, Object>>() {}))
 				).thenThrow(new ResourceAccessException("Service timeout"));
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send the GET request.
-		mockMvc.perform(get("/waterquality/records/latestflagged"))
+		mockMvc.perform(get("/waterquality/records/latestflagged")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Verify if the response is 503 Service Unavailable.
 		.andExpect(status().isServiceUnavailable()) 

@@ -9,25 +9,37 @@ import java.util.Collections;
 import java.util.List;
 
 import com.assessment.monitoringmicroservice.model.WaterReading;
+import com.assessment.monitoringmicroservice.security.TokenValidationResponse;
+import com.assessment.monitoringmicroservice.security.TokenValidator;
 import com.assessment.monitoringmicroservice.service.WaterReadingService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 
 @SpringBootTest
 @AutoConfigureMockMvc
 public class WaterReadingControllerTest {
 
-    @Autowired
-    private MockMvc mockMvc;
+	@Autowired
+	private MockMvc mockMvc;
 
-    @MockBean
-    private WaterReadingService waterReadingService;
+	@MockBean
+	private TokenValidator tokenValidator;
+
+	@MockBean
+	private WaterReadingService waterReadingService;
+
     
 	@Test
 	void testGetLatestSuccess() throws Exception {
@@ -47,9 +59,14 @@ public class WaterReadingControllerTest {
 		reading.setTimestamp(LocalDateTime.now());
 
 		 when(waterReadingService.getLatestRecord()).thenReturn(reading);
+		 when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
+
 
 		// Act: Send GET request
-		mockMvc.perform(get("/watermonitoring/records/latest"))
+		mockMvc.perform(get("/watermonitoring/records/latest")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Verify if the response has the correct data and the status.
 		.andExpect(status().isOk())  // checks if HTTP 200 or OK
@@ -70,9 +87,13 @@ public class WaterReadingControllerTest {
 
 		// Arrange: Mock the repository to return null value.
 		when(waterReadingService.getLatestRecord()).thenReturn(null);
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send GET request
-		mockMvc.perform(get("/watermonitoring/records/latest"))
+		mockMvc.perform(get("/watermonitoring/records/latest")
+				.header("Authorization", "Bearer faketoken"))
 
 		//Assert: Check if the response status is 204 No Content
 		.andExpect(status().isNoContent());  
@@ -91,9 +112,13 @@ public class WaterReadingControllerTest {
 		latestReading.setTimestamp(LocalDateTime.now()); // Latest timestamp
 
 		when(waterReadingService.getLatestRecord()).thenReturn(latestReading);
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send GET request to get the latest reading
-		mockMvc.perform(get("/watermonitoring/records/latest"))
+		mockMvc.perform(get("/watermonitoring/records/latest")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Verify that the response contains the latest records.
 		.andExpect(status().isOk())
@@ -105,9 +130,13 @@ public class WaterReadingControllerTest {
 	void testGetLatestDatabaseError() throws Exception {
 		when(waterReadingService.getLatestRecord())
 		.thenThrow(new DataAccessResourceFailureException("Database connection failed")); // mock for database errors
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act: Send GET request and check the response.
-		mockMvc.perform(get("/watermonitoring/records/latest"))
+		mockMvc.perform(get("/watermonitoring/records/latest")
+				.header("Authorization", "Bearer faketoken"))
 
 		//Assert: Check if the response 500 internal server with error message.
 		.andExpect(status().isInternalServerError())
@@ -119,11 +148,17 @@ public class WaterReadingControllerTest {
 	void testGetLatestInternalServerError() throws Exception {
 		when(waterReadingService.getLatestRecord())
 
+
 		// Mock the runtime error 
 		.thenThrow(new RuntimeException("Internal server error"));
 
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
+
 		// Act: Send GET request and check the response.
-		mockMvc.perform(get("/watermonitoring/records/latest"))
+		mockMvc.perform(get("/watermonitoring/records/latest")
+				.header("Authorization", "Bearer faketoken"))
 
 		//Assert: Check if the response status is 500 internal server error.
 		.andExpect(status().isInternalServerError())
@@ -163,9 +198,13 @@ public class WaterReadingControllerTest {
 
 		List<WaterReading> mockRecords = Arrays.asList(record1, record2);
 		when(waterReadingService.getAllRecords()).thenReturn(mockRecords);
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act
-		mockMvc.perform(get("/watermonitoring/records")) // Send GET request
+		mockMvc.perform(get("/watermonitoring/records")
+				.header("Authorization", "Bearer faketoken")) // Send GET request
 
 		// Assert
 		.andExpect(status().isOk())  // Expect 200 OK
@@ -201,9 +240,13 @@ public class WaterReadingControllerTest {
 	void testGetAllRecordsNoData() throws Exception {
 		// Arrange 
 		when(waterReadingService.getAllRecords()).thenReturn(Collections.emptyList());
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act
-		mockMvc.perform(get("/watermonitoring/records"))
+		mockMvc.perform(get("/watermonitoring/records")
+				.header("Authorization", "Bearer faketoken"))
 
 		// Assert: Expect 204 No Content
 		.andExpect(status().isNoContent()); 
@@ -217,9 +260,13 @@ public class WaterReadingControllerTest {
 		// Arrange
 		when(waterReadingService.getAllRecords())
 		.thenThrow(new RuntimeException("Internal server error"));
+		when(tokenValidator.validateToken(anyString())).thenReturn(
+				new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+		);
 
 		// Act
-		mockMvc.perform(get("/watermonitoring/records"))
+		mockMvc.perform(get("/watermonitoring/records")
+				.header("Authorization", "Bearer faketoken"))
 		
 		// Assert
 		.andExpect(status().isInternalServerError())

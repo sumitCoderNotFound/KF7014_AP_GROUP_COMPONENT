@@ -1,6 +1,8 @@
 package com.water.quality.monitoring.controller;
 
 import com.water.quality.monitoring.model.WaterQualityRecord;
+import com.water.quality.monitoring.security.TokenValidationResponse;
+import com.water.quality.monitoring.security.TokenValidator;
 import com.water.quality.monitoring.service.MonitoringService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,6 +17,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -30,9 +33,18 @@ class MonitoringControllerTest {
     @InjectMocks
     private MonitoringController monitoringController;
 
+    @Mock
+    private TokenValidator tokenValidator;
+
     @BeforeEach
-    void setUp() {
+    void setUp() throws NoSuchFieldException, IllegalAccessException {
         mockMvc = MockMvcBuilders.standaloneSetup(monitoringController).build();
+
+        // Manually inject the mocked TokenValidator into the controller field
+        var field = MonitoringController.class.getDeclaredField("tokenValidator");
+        field.setAccessible(true);
+        field.set(monitoringController, tokenValidator);
+
     }
 
     @Test
@@ -43,10 +55,14 @@ class MonitoringControllerTest {
         );
 
         when(monitoringService.getAllRecords()).thenReturn(mockRecords);
+        when(tokenValidator.validateToken(anyString())).thenReturn(
+                new TokenValidationResponse(true, "testuser", "Token is valid", "ok")
+        );
 
         System.out.println("Mock response: " + monitoringService.getAllRecords());
 
         mockMvc.perform(get("/api/water-quality/records")
+                        .header("Authorization", "Bearer faketoken")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray())
