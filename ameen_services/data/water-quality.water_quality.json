@@ -1,0 +1,408 @@
+[{
+  "_id": "c33946f1-0e9d-4136-8489-cf4e31ce6888",
+  "timestamp": {
+    "$date": "2025-03-14T18:45:39.772Z"
+  },
+  "objectId": "1115",
+  "ph": 7.7,
+  "alkalinity": 95,
+  "conductivity": 275,
+  "bod": 2.4,
+  "nitrite": 0.011,
+  "cusol1": 0.0022,
+  "cusol2": 0.76,
+  "fesol1": 146.51,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "3da2068c-b083-46db-ba67-a37d8a5a9c06",
+  "timestamp": {
+    "$date": "2025-03-14T18:46:09.763Z"
+  },
+  "objectId": "1147",
+  "ph": 7.5,
+  "alkalinity": 68,
+  "conductivity": 225,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0011,
+  "cusol2": 1.36,
+  "fesol1": 720.25,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "213a5c16-059d-40bf-8c54-5da5aa3e0265",
+  "timestamp": {
+    "$date": "2025-03-14T18:46:39.773Z"
+  },
+  "objectId": "1148",
+  "ph": 7.8,
+  "alkalinity": 94,
+  "conductivity": 274,
+  "bod": 2,
+  "nitrite": 0.014,
+  "cusol1": 0.0015,
+  "cusol2": 0.81,
+  "fesol1": 397.38,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "6117c863-13d3-4d10-81ab-48b8397e0a13",
+  "timestamp": {
+    "$date": "2025-03-14T18:47:09.772Z"
+  },
+  "objectId": "1523",
+  "ph": 7.8,
+  "alkalinity": 58,
+  "conductivity": 176,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0022,
+  "cusol2": 0.55,
+  "fesol1": 198.73,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "36bd85c5-1bb3-4f4e-965a-933eacb46c29",
+  "timestamp": {
+    "$date": "2025-03-14T18:47:39.775Z"
+  },
+  "objectId": "1555",
+  "ph": 7.6,
+  "alkalinity": 42,
+  "conductivity": 136,
+  "bod": 2.4,
+  "nitrite": 0.005,
+  "cusol1": 0.001,
+  "cusol2": 1,
+  "fesol1": 728.88,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "a35c6be9-4546-4fc9-bc1f-5039b484df22",
+  "timestamp": {
+    "$date": "2025-03-14T18:48:09.765Z"
+  },
+  "objectId": "1556",
+  "ph": 7.8,
+  "alkalinity": 65,
+  "conductivity": 182,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0031,
+  "cusol2": 0.57,
+  "fesol1": 573.49,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "40814aac-5b90-4676-8e96-b45ebe184d7d",
+  "timestamp": {
+    "$date": "2025-03-14T18:49:39.765Z"
+  },
+  "objectId": "1934",
+  "ph": 7.8,
+  "alkalinity": 65,
+  "conductivity": 215,
+  "bod": 2,
+  "nitrite": 0.009,
+  "cusol1": 0.0012,
+  "cusol2": 1.49,
+  "fesol1": 458.88,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "8dc3aa93-2712-4ebc-b0b9-4c592f4104ff",
+  "timestamp": {
+    "$date": "2025-03-14T18:50:09.777Z"
+  },
+  "objectId": "1935",
+  "ph": 7.5,
+  "alkalinity": 49,
+  "conductivity": 179,
+  "bod": 2,
+  "nitrite": 0.012,
+  "cusol1": 0.0022,
+  "cusol2": 1.89,
+  "fesol1": 478.69,
+  "znsol": 2.74,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "6a921220-04c6-41e2-a029-86522a91493a",
+  "timestamp": {
+    "$date": "2025-03-14T18:54:13.368Z"
+  },
+  "objectId": "1115",
+  "ph": 7.7,
+  "alkalinity": 95,
+  "conductivity": 275,
+  "bod": 2.4,
+  "nitrite": 0.011,
+  "cusol1": 0.0022,
+  "cusol2": 0.76,
+  "fesol1": 146.51,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "76d19a63-abfb-4080-abdb-f5f3f2df7ccd",
+  "timestamp": {
+    "$date": "2025-03-14T18:54:43.344Z"
+  },
+  "objectId": "1147",
+  "ph": 7.5,
+  "alkalinity": 68,
+  "conductivity": 225,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0011,
+  "cusol2": 1.36,
+  "fesol1": 720.25,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "b1da3cd2-39df-4c2d-8e55-1265146950ab",
+  "timestamp": {
+    "$date": "2025-03-14T18:55:13.351Z"
+  },
+  "objectId": "1148",
+  "ph": 7.8,
+  "alkalinity": 94,
+  "conductivity": 274,
+  "bod": 2,
+  "nitrite": 0.014,
+  "cusol1": 0.0015,
+  "cusol2": 0.81,
+  "fesol1": 397.38,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "d0259a5a-b117-400d-aadf-a973d576c9ed",
+  "timestamp": {
+    "$date": "2025-03-14T18:55:43.345Z"
+  },
+  "objectId": "1523",
+  "ph": 7.8,
+  "alkalinity": 58,
+  "conductivity": 176,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0022,
+  "cusol2": 0.55,
+  "fesol1": 198.73,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "4b3924fb-0c0d-4f5e-be49-66bb3dfc48af",
+  "timestamp": {
+    "$date": "2025-03-14T18:56:13.345Z"
+  },
+  "objectId": "1555",
+  "ph": 7.6,
+  "alkalinity": 42,
+  "conductivity": 136,
+  "bod": 2.4,
+  "nitrite": 0.005,
+  "cusol1": 0.001,
+  "cusol2": 1,
+  "fesol1": 728.88,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "b125f548-7f05-4820-b87d-e44bdf97679f",
+  "timestamp": {
+    "$date": "2025-03-14T18:56:43.351Z"
+  },
+  "objectId": "1556",
+  "ph": 7.8,
+  "alkalinity": 65,
+  "conductivity": 182,
+  "bod": 2,
+  "nitrite": 0.005,
+  "cusol1": 0.0031,
+  "cusol2": 0.57,
+  "fesol1": 573.49,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "de88e2b7-f6d2-4023-b10d-31eef6029115",
+  "timestamp": {
+    "$date": "2025-03-14T18:57:13.350Z"
+  },
+  "objectId": "1903",
+  "ph": 7.5,
+  "alkalinity": 87,
+  "conductivity": 259,
+  "bod": 2,
+  "nitrite": 0.01,
+  "cusol1": 0,
+  "cusol2": 1.43,
+  "fesol1": 211.26,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "16c3b1ab-cce9-47ba-9035-a370dfc2a9d5",
+  "timestamp": {
+    "$date": "2025-03-14T18:57:43.342Z"
+  },
+  "objectId": "1904",
+  "ph": 9,
+  "alkalinity": 116,
+  "conductivity": 333,
+  "bod": 2,
+  "nitrite": 0.009,
+  "cusol1": 0,
+  "cusol2": 0.74,
+  "fesol1": 92.24,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "48e9c451-d85b-4dae-b020-edcd525c60e2",
+  "timestamp": {
+    "$date": "2025-03-14T18:58:13.344Z"
+  },
+  "objectId": "1934",
+  "ph": 7.8,
+  "alkalinity": 65,
+  "conductivity": 215,
+  "bod": 2,
+  "nitrite": 0.009,
+  "cusol1": 0.0012,
+  "cusol2": 1.49,
+  "fesol1": 458.88,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "b4ebd41e-e236-4d75-a0fb-62f7d8aade99",
+  "timestamp": {
+    "$date": "2025-03-14T18:58:43.345Z"
+  },
+  "objectId": "1935",
+  "ph": 7.5,
+  "alkalinity": 49,
+  "conductivity": 179,
+  "bod": 2,
+  "nitrite": 0.012,
+  "cusol1": 0.0022,
+  "cusol2": 1.89,
+  "fesol1": 478.69,
+  "znsol": 2.74,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "7275c473-3bb3-43e3-9997-fd9f4236b42c",
+  "timestamp": {
+    "$date": "2025-03-14T18:59:13.345Z"
+  },
+  "objectId": "2812",
+  "ph": 7.4,
+  "alkalinity": 34,
+  "conductivity": 149,
+  "bod": 2,
+  "nitrite": 0.006,
+  "cusol1": 0,
+  "cusol2": 1.18,
+  "fesol1": 286.37,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "2b4faad4-20a7-442d-8473-5bf26149e5e0",
+  "timestamp": {
+    "$date": "2025-03-14T18:59:43.344Z"
+  },
+  "objectId": "2813",
+  "ph": 7.6,
+  "alkalinity": 26,
+  "conductivity": 121,
+  "bod": 2,
+  "nitrite": 0.006,
+  "cusol1": 0.001,
+  "cusol2": 1.81,
+  "fesol1": 237.27,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "cdd6947d-855f-4311-b093-7c257bc2bbdf",
+  "timestamp": {
+    "$date": "2025-03-14T19:00:13.352Z"
+  },
+  "objectId": "2843",
+  "ph": 7.4,
+  "alkalinity": 26,
+  "conductivity": 124,
+  "bod": 2,
+  "nitrite": 0.008,
+  "cusol1": 0.0011,
+  "cusol2": 0.99,
+  "fesol1": 372.61,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "f3972f35-1702-4117-b832-c45844864b03",
+  "timestamp": {
+    "$date": "2025-03-14T19:00:43.346Z"
+  },
+  "objectId": "2844",
+  "ph": 7.3,
+  "alkalinity": 19,
+  "conductivity": 108,
+  "bod": 2,
+  "nitrite": 0.007,
+  "cusol1": 0.0019,
+  "cusol2": 1.09,
+  "fesol1": 521.41,
+  "znsol": 5.6,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "b496e9b1-60f4-4159-84b1-5c4dddf3fde0",
+  "timestamp": {
+    "$date": "2025-03-14T19:01:13.356Z"
+  },
+  "objectId": "3434",
+  "ph": 7.5,
+  "alkalinity": 46,
+  "conductivity": 164,
+  "bod": 2.3,
+  "nitrite": 0.012,
+  "cusol1": 0,
+  "cusol2": 1.52,
+  "fesol1": 373.7,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+},
+{
+  "_id": "48ce16e4-8d23-4531-b46c-f4b769e3683f",
+  "timestamp": {
+    "$date": "2025-03-14T19:01:43.352Z"
+  },
+  "objectId": "3435",
+  "ph": 8,
+  "alkalinity": 58,
+  "conductivity": 200,
+  "bod": 2,
+  "nitrite": 0.012,
+  "cusol1": 0,
+  "cusol2": 1.34,
+  "fesol1": 291.67,
+  "znsol": 5,
+  "_class": "edu.assessment.water_monitoring.entity.WaterQuality"
+}]
