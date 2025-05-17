@@ -107,29 +107,25 @@ public class AuthController {
         return ResponseEntity.ok(Map.of("message", "Logged out successfully.")); // delete token on client side react js sumit
     }
 
-    /**
-     * Validates a JWT token.
-     * This endpoint is used by other microservices to validate tokens.
-     * 
-     * @param authentication the authentication object containing the user details
-     * @return a response entity with validation result
-     */
     @GetMapping("/validate")
     public ResponseEntity<TokenValidationResponse> validateToken(Authentication authentication) {
         if (authentication != null && authentication.isAuthenticated()) {
             return ResponseEntity.ok(new TokenValidationResponse(
-                true,
-                authentication.getName(),
-                "Token is valid"
+                    true,
+                    authentication.getName(),
+                    "Token is valid",
+                    "ok"
             ));
         } else {
             return ResponseEntity.ok(new TokenValidationResponse(
-                false,
-                null,
-                "Invalid token"
+                    false,
+                    null,
+                    "Token is expired or invalid",
+                    "expired"
             ));
         }
     }
+
 
     @PostMapping("/refresh-token")
     public ResponseEntity<?> refreshToken(@RequestBody Map<String, String> request) {

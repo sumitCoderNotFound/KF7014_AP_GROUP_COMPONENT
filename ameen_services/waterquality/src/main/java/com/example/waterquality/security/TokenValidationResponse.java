@@ -1,10 +1,9 @@
-package com.apiauth.API.Security.controller;
+package com.example.waterquality.security;
 
 /**
  * Response DTO for token validation.
  * This class is used to return the result of token validation to other microservices.
  */
-
 public class TokenValidationResponse {
     private boolean valid;
     private String username;
