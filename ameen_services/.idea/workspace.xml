@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03308723-71fd-4b88-a85f-873e8b9274e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../prathamesh_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ridham_services/monitoring/src/test/java/com/waterservices/monitoring/MonitoringControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/monitoring/src/test/java/com/waterservices/monitoring/MonitoringControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/controller/MonitoringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/controller/MonitoringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/test/java/com/water/quality/monitoring/controller/MonitoringControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/test/java/com/water/quality/monitoring/controller/MonitoringControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/test/java/com/water/quality/check/controller/QualityCheckControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/test/java/com/water/quality/check/controller/QualityCheckControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747502281964</updated>
       <workItem from="1747502283014" duration="13000" />
-      <workItem from="1747502301239" duration="1121000" />
+      <workItem from="1747502301239" duration="1412000" />
     </task>
     <servers />
   </component>
