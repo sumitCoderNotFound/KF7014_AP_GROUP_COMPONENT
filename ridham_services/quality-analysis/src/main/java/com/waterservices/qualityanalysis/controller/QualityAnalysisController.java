@@ -75,6 +75,8 @@ public class QualityAnalysisController {
         ResponseEntity<?> authCheck = authenticateRequest(authHeader);
         if (authCheck != null) return authCheck;
 
+        qualityAnalysisService.setAuthHeader(authHeader);
+
         if (qualityAnalysisService.getLatestAnalysisResult() == null) {
             return ResponseEntity.notFound().build();
         }

@@ -51,7 +51,7 @@ public class QualityCheckController {
         ResponseEntity<?> authCheck = authenticateRequest(authHeader);
         if (authCheck != null) return authCheck;
 
-        QualityCheckRequest request = monitoringServiceClient.fetchLatestWaterQualityData();
+        QualityCheckRequest request = monitoringServiceClient.fetchLatestWaterQualityData(authHeader);
         QualityCheckResponse response = qualityCheckService.validateWaterQuality(request);
         return ResponseEntity.ok(response);
     }

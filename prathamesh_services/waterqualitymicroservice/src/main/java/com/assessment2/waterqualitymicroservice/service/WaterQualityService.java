@@ -1,13 +1,11 @@
 package com.assessment2.waterqualitymicroservice.service;
 
+import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
 import java.util.Map;
 
@@ -30,7 +28,16 @@ public class WaterQualityService {
 
 	private final RestTemplate restTemplate;
 	private static final Logger logger = LoggerFactory.getLogger(WaterQualityService.class); // logger
-	private static final String MONITORING_SERVICE_URL = "http://localhost:8081/watermonitoring/records/latest"; // water data url
+	private static final String MONITORING_SERVICE_URL = "http://localhost:8082/watermonitoring/records/latest"; // water data url
+
+	public String authHeader;
+
+	public String getAuthHeader() {
+		return authHeader;
+	}
+	public void setAuthHeader(String authToken) {
+		this.authHeader = authToken;
+	}
 
 	/**
 	 * Constructs a WaterQualityService with a RestTemplate for external API calls.
@@ -53,13 +60,17 @@ public class WaterQualityService {
 		try {
 			logger.info("Fetching latest water quality data from monitoring service...");
 
+			HttpHeaders headers = new HttpHeaders();
+			headers.set("Authorization", authHeader);
 
-			// Fetch the data from the water monitoring service
+			HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+
 			ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
 					MONITORING_SERVICE_URL,
-					HttpMethod.GET, null, new ParameterizedTypeReference<Map<String, Object>>() {
-
-					});
+					HttpMethod.GET,
+					requestEntity,
+					new ParameterizedTypeReference<Map<String, Object>>() {}
+			);
 
 			// checks if response was successful and valid data is present
 			if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null && !response.getBody().isEmpty()) {

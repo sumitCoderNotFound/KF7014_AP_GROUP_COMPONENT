@@ -110,6 +110,8 @@ public class WaterQualityController {
 	public ResponseEntity<?> getlatestWaterQuality(@RequestHeader("Authorization") String authHeader) {
 		ResponseEntity<?> authCheck = authenticateRequest(authHeader);
 		if (authCheck != null) return authCheck;
+
+		waterQualityService.setAuthHeader(authHeader);
 		return waterQualityService.getLatestWaterQuality();
 
 	}

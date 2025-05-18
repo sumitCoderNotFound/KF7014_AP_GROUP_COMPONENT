@@ -7,6 +7,9 @@ import com.example.waterquality.model.WaterQualityAssessment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -28,6 +31,15 @@ public class WaterQualityService {
     private final Map<String, LocalDateTime> processedRecords = new ConcurrentHashMap<>();
     private LocalDateTime lastProcessedTime = LocalDateTime.now().minusHours(1); // Start from 1 hour ago
 
+    private String authHeader;
+
+    public void setAuthHeader(String authHeader) {
+        this.authHeader = authHeader;
+    }
+    public String getAuthHeader() {
+        return authHeader;
+    }
+
     @Value("${monitoring.service.url}")
     private String monitoringServiceUrl;
 
@@ -35,13 +47,22 @@ public class WaterQualityService {
         this.restTemplate = restTemplate;
     }
 
-    @Scheduled(fixedRate = 30000) // Check every 30 seconds
+    //@Scheduled(fixedRate = 30000) // Check every 30 seconds
     public WaterQualityAssessment checkWaterQuality() {
         logger.info("Checking water quality from monitoring service");
         
         try {
-            ResponseEntity<WaterQualityDTO[]> response =
-                restTemplate.getForEntity(monitoringServiceUrl + "/records", WaterQualityDTO[].class);
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("Authorization", authHeader);
+
+            HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+
+            ResponseEntity<WaterQualityDTO[]> response = restTemplate.exchange(
+                    monitoringServiceUrl + "/records",
+                    HttpMethod.GET,
+                    requestEntity,
+                    WaterQualityDTO[].class
+            );
 
             WaterQualityDTO[] records = response.getBody();
             if (Objects.nonNull(records) && records.length > 0) {

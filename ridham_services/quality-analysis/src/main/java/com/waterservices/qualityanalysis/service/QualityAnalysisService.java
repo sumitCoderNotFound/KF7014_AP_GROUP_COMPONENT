@@ -5,6 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
@@ -36,6 +40,8 @@ public class QualityAnalysisService {
     @Value("${monitoring.service.endpoint.fetch.latest-record}")
     private String monitoringFetchLatestEndpoint;
 
+    private String authHeader;
+
     // Thresholds - loaded from application.properties
 
     @Value("${water.quality.thresholds.ph.max}")
@@ -56,6 +62,7 @@ public class QualityAnalysisService {
 
 
     public AnalysisResult getLatestAnalysisResult() {
+        analyzeWaterQuality();
         return latestAnalysisResult;
     }
 
@@ -87,10 +94,16 @@ public class QualityAnalysisService {
         return turbidityMaxThreshold;
     }
 
+    public String getAuthHeader() {
+        return authHeader;
+    }
+    public void setAuthHeader(String authToken) {
+        this.authHeader = authToken;
+    }
     /**
      * Analyzes water quality periodically.
      */
-    @Scheduled(fixedRate = 60000, initialDelay = 6000) // Run every 60 seconds
+    //@Scheduled(fixedRate = 60000, initialDelay = 6000) // Run every 60 seconds
     public void analyzeWaterQualityPeriodically() {
        analyzeWaterQuality();
     }
@@ -116,9 +129,24 @@ public class QualityAnalysisService {
      */
     public WaterQualityRecord fetchLatestWaterQualityRecord() {
         String apiUrl = monitoringServiceUrl + monitoringFetchLatestEndpoint;
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", authHeader);
+
+        HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+
         try {
-            WaterQualityRecord record = restTemplate.getForObject(apiUrl, WaterQualityRecord.class);
-            logger.info("Successfully fetched latest record from Monitoring Service: Object ID = {}", record.getObjectId());
+            ResponseEntity<WaterQualityRecord> response = restTemplate.exchange(
+                    apiUrl,
+                    HttpMethod.GET,
+                    requestEntity,
+                    WaterQualityRecord.class
+            );
+
+            WaterQualityRecord record = response.getBody();
+            if (record != null) {
+                logger.info("Successfully fetched latest record: Object ID = {}", record.getObjectId());
+            }
             return record;
         } catch (RestClientException e) {
             logger.error("Error fetching latest water quality record from Monitoring Service: {}", e.getMessage());

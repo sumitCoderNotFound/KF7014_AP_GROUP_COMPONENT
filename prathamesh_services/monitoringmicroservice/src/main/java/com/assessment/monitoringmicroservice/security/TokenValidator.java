@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class TokenValidator {
 
     private final String securityServiceValidationURL =
-            "http://localhost:8120/api/authenticate/validate";
+            "http://localhost:8080/api/authenticate/validate";
 
     public TokenValidationResponse validateToken(String token) {
         RestTemplate restTemplate = new RestTemplate();

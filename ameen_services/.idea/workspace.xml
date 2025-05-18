@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03308723-71fd-4b88-a85f-873e8b9274e8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../API-Security/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../API-Security/data/users.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MyDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/MyDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring/src/main/java/com/water/quality/monitoring/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring/src/main/java/com/water/quality/monitoring/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterquality/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/waterquality/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../prathamesh_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoring.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/controller/QualityAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/controller/QualityAnalysisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/quality-analysis/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/client/MonitoringServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/client/MonitoringServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/controller/QualityCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/controller/QualityCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/java/com/water/quality/check/security/TokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/quality-check-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +39,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -27,8 +55,15 @@
   "keyToString": {
     "JUnit.All in monitoring.executor": "Run",
     "JUnit.All in waterquality.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.MonitoringApplication.executor": "Run",
+    "Spring Boot.WaterqualityApplication.executor": "Debug",
     "git-widget-placeholder": "ridham__work__branch",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/ameen_services/monitoring/src/main/java/com/water/quality/monitoring",
@@ -120,10 +155,30 @@
       <updated>1747502281964</updated>
       <workItem from="1747502283014" duration="13000" />
       <workItem from="1747502301239" duration="1412000" />
+      <workItem from="1747581118126" duration="1225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java</url>
+          <line>88</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

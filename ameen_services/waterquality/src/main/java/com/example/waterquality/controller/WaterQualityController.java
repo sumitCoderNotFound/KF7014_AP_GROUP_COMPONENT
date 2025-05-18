@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * REST Controller for water quality assessment endpoints.
  * Provides APIs for retrieving water quality assessments, current status, and parameter measurements.
  * All assessments are based on WHO drinking water quality guidelines.
- * 
+ * <p>
  * The controller offers three main endpoints:
  * - /assessment: Detailed quality assessment with all parameters and issues
  * - /status: Simple GREEN/RED status indicator
@@ -26,7 +26,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/quality") //"Water Quality Assessment API"
 public class WaterQualityController {
-    /** Service responsible for water quality assessment logic */
+    /**
+     * Service responsible for water quality assessment logic
+     */
     @Autowired
     private WaterQualityService waterQualityService;
 
@@ -66,6 +68,7 @@ public class WaterQualityController {
         ResponseEntity<?> authCheck = authenticateRequest(authHeader);
         if (authCheck != null) return authCheck;
 
+        waterQualityService.setAuthHeader(authHeader);
         WaterQualityAssessment assessment = waterQualityService.checkWaterQuality();
         if (assessment != null) {
             return ResponseEntity.ok(assessment);
@@ -75,7 +78,7 @@ public class WaterQualityController {
 
     /**
      * Get the current water safety status.
-     *
+     * <p>
      * The status is a simple GREEN/RED indicator based on WHO drinking water quality guidelines.
      *
      * @return GREEN if all parameters are within WHO limits, RED if any parameter exceeds those limits.
@@ -85,6 +88,7 @@ public class WaterQualityController {
         ResponseEntity<?> authCheck = authenticateRequest(authHeader);
         if (authCheck != null) return authCheck;
 
+        waterQualityService.setAuthHeader(authHeader);
         WaterQualityAssessment assessment = waterQualityService.checkWaterQuality();
         if (assessment != null) {
             return ResponseEntity.ok(assessment.getStatus());
@@ -103,6 +107,7 @@ public class WaterQualityController {
         ResponseEntity<?> authCheck = authenticateRequest(authHeader);
         if (authCheck != null) return authCheck;
 
+        waterQualityService.setAuthHeader(authHeader);
         WaterQualityAssessment assessment = waterQualityService.checkWaterQuality();
         if (assessment != null) {
             return ResponseEntity.ok(assessment);
