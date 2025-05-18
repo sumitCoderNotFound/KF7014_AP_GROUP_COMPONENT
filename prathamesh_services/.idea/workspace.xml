@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3340c838-fd47-468c-9193-64343c2e83a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway/filters/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway/security/TokenValidationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway/security/TokenValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumit_services/api-gateway/src/main/java/com/water/quality/gateway/filters/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumit_services/api-gateway/src/main/java/com/water/quality/gateway/security/TokenValidationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumit_services/api-gateway/src/main/java/com/water/quality/gateway/security/TokenValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumit_services/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API-Security/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../API-Security/data/users.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/filters/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/security/TokenValidationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/security/TokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-endpoints.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/api-endpoints.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ameen_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/model/WaterQualityRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/model/WaterQualityRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/repository/WaterQualityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sumit_services/monitoring-service/src/main/java/com/water/quality/monitoring/repository/WaterQualityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,38 +38,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in gateway.executor": "Run",
-    "JUnit.All in monitoringmicroservice.executor": "Run",
-    "JUnit.All in waterqualitymicroservice.executor": "Run",
-    "JUnit.WaterQualityControllerTests.executor": "Run",
-    "JUnit.WaterReadingControllerTest.executor": "Run",
-    "JUnit.com.assessment.monitoringmicroservice in monitoringmicroservice.executor": "Run",
-    "JUnit.com.assessment2.waterqualitymicroservice in waterqualitymicroservice.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.MonitoringmicroserviceApplication.executor": "Run",
-    "Spring Boot.WaterqualitymicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "ridham__work__branch",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/prathamesh_services/gateway/src/main/java/com/assessment3/gateway",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in gateway.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in monitoringmicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in waterqualitymicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WaterQualityControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WaterReadingControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.assessment.monitoringmicroservice in monitoringmicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.assessment2.waterqualitymicroservice in waterqualitymicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MonitoringmicroserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WaterqualitymicroserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ridham__work__branch&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/prathamesh_services/gateway/src/main/java/com/assessment3/gateway&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway" />
@@ -191,6 +187,7 @@
       <updated>1747501673216</updated>
       <workItem from="1747501674242" duration="6000" />
       <workItem from="1747578691479" duration="3640000" />
+      <workItem from="1747586672678" duration="512000" />
     </task>
     <servers />
   </component>

@@ -18,10 +18,10 @@ public class ApiGatewayApplication {
         return builder.routes()
                 .route("monitoring_service", r -> r
                         .path("/api/monitoring/**")
-                        .uri("http://localhost:8082"))
+                        .uri("http://localhost:8102"))
                 .route("quality_service", r -> r
                         .path("/api/quality/**")
-                        .uri("http://localhost:8081"))
+                        .uri("http://localhost:8103"))
                 .build();
     }
 }
