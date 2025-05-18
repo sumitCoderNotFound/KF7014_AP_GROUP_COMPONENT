@@ -12,9 +12,9 @@ public class ApiGatewayConfig {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("monitoring-service", r -> r.path("/api/water-quality/**")
-                        .uri("http://localhost:8080"))
+                        .uri("http://localhost:8112"))
                 .route("quality-check-service", r -> r.path("/api/quality-check/**")
-                        .uri("http://localhost:8081"))
+                        .uri("http://localhost:8113"))
                 .build();
     }
 }
