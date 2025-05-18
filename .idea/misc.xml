@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/ameen_services/pom.xml" />
         <option value="$PROJECT_DIR$/prathamesh_services/pom.xml" />
         <option value="$PROJECT_DIR$/ridham_services/pom.xml" />
+        <option value="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/prathamesh_services/gateway/pom.xml" />
       </list>
     </option>
   </component>
