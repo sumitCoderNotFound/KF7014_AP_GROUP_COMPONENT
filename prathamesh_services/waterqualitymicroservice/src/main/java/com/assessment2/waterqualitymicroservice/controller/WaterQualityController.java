@@ -19,7 +19,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-
 /**
  * Controller for handling the water quality related requests.
  * It provides an endpoint for fetching the latest water quality data,

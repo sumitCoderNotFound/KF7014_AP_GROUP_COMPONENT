@@ -15,6 +15,13 @@ import org.springframework.security.core.Authentication;
 import java.util.Map;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+/**
+ * REST controller for handling user authentication and account-related operations.
+ * Also provides endpoints for login, registration, password change, token validation,
+ * token refresh, and logout.
+ *
+ * <p>Base URI: /api/authenticate</p>
+ */
 @RestController
 @RequestMapping("/api/authenticate")
 public class AuthController {
@@ -34,11 +41,13 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello World";
-    }
-
+    /**
+     * Authenticates a user using username and password,
+     * and returns a JWT access token and refresh token if successful.
+     *
+     * @param request An AuthRequest object containing username and password.
+     * @return A ResponseEntity containing accessToken, refreshToken and success message.
+     */
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody AuthRequest request) {
         System.out.println("Login");
@@ -63,6 +72,13 @@ public class AuthController {
         ));
     }
 
+
+    /**
+     * Registers a new user with hashed password.
+     *
+     * @param request An AuthRequest object containing username and password.
+     * @return A ResponseEntity with registration status message.
+     */
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody AuthRequest request) {
         System.out.println("Register");
@@ -83,6 +99,14 @@ public class AuthController {
         return ResponseEntity.ok("User registered successfully.");
     }
 
+
+    /**
+     * Allows a logged-in user to change their password by verifying the old one.
+     *
+     * @param request A ChangePassword object containing old and new passwords.
+     * @param authentication The current authenticated user's context.
+     * @return A ResponseEntity with password change status message.
+     */
     @PutMapping("/changepassword")
     public ResponseEntity<String> changePassword(@RequestBody ChangePassword request,
                                                  Authentication authentication) {
@@ -101,12 +125,25 @@ public class AuthController {
         return ResponseEntity.ok("Password changed successfully.");
     }
 
+    /**
+     * Simulates a user logout.
+     * Note: Actual token deletion should be handled on the client side.
+     *
+     * @return A ResponseEntity with logout status message.
+     */
     @PostMapping("/logout")
     public ResponseEntity<Map<String, String>> logout() {
 
         return ResponseEntity.ok(Map.of("message", "Logged out successfully.")); // delete token on client side react js sumit
     }
 
+
+    /**
+     * Validates the JWT access token from the current authentication context.
+     *
+     * @param authentication The current authentication token.
+     * @return A ResponseEntity with token validation status and details.
+     */
     @GetMapping("/validate")
     public ResponseEntity<TokenValidationResponse> validateToken(Authentication authentication) {
         if (authentication != null && authentication.isAuthenticated()) {
@@ -127,6 +164,12 @@ public class AuthController {
     }
 
 
+    /**
+     * Validates the refresh token and issues a new access token if valid.
+     *
+     * @param request A map containing the refresh token.
+     * @return A ResponseEntity with a new access token or an error message.
+     */
     @PostMapping("/refresh-token")
     public ResponseEntity<?> refreshToken(@RequestBody Map<String, String> request) {
         String refreshToken = request.get("refreshToken");
@@ -151,6 +194,13 @@ public class AuthController {
         }
     }
 
+
+    /**
+     * Deletes a user account based on the provided username.
+     *
+     * @param username The username of the account to delete.
+     * @return A ResponseEntity with deletion status message.
+     */
     @DeleteMapping("/delete/{username}")
     public ResponseEntity<String> deleteUser(@PathVariable String username) {
         System.out.println(username);

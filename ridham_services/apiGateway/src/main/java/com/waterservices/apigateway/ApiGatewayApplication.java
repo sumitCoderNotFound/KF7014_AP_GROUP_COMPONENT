@@ -10,4 +10,20 @@ public class ApiGatewayApplication {
         SpringApplication.run(ApiGatewayApplication.class, args);
     }
 
+    /**
+     * Global CORS configuration for API Gateway
+     */
+    @Bean
+    public CorsWebFilter corsWebFilter() {
+        CorsConfiguration cors = new CorsConfiguration();
+        cors.addAllowedOrigin("http://localhost:3001"); // Replace with actual frontend origin in production
+        cors.addAllowedMethod("*");
+        cors.addAllowedHeader("*");
+        cors.setAllowCredentials(true);
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", cors);
+
+        return new CorsWebFilter(source);
+    }
 }

@@ -16,134 +16,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Adv_programming_assessment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Security/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/data/users.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/SQLiteDialect.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/TokenValidationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/TokenValidationResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/Water-monitoring-proj.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/src/test/java/com/example/apigatewayapplication/ApiGatewayApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/data/MyDB.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/data/River_Water_Quality_Monitoring.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/data/water-quality.water_quality.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/data/MyDB.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/data/River_Water_Quality_Monitoring.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/data/water-quality.water_quality.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/monitoring.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/MonitoringApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/config/MonitoringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/controller/WaterMonitorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect$SQLiteUniqueDelegate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/entity/WaterQuality.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/exception/CsvProcessingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/repository/WaterMonitorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/java/com/water/quality/monitoring/service/MonitorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/test/java/com/water/quality/monitoring/MonitoringApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/test/java/com/water/quality/monitoring/config/TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/test/java/com/water/quality/monitoring/exception/GlobalExceptionHandlerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/src/test/java/com/water/quality/monitoring/service/MonitorServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/WaterqualityApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/WaterqualityApplication_0_main_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/constants/WhoLimits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/dialect/SQLiteDialect$SQLiteUniqueDelegate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/dialect/SQLiteDialect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/dto/WaterQualityDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/model/WaterQualityAssessment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/src/test/java/com/example/waterquality/WaterqualityApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/data/MyDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/data/MyDB.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/monitoring.eml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/monitoring.eml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/config/MonitoringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/config/MonitoringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/controller/WaterMonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/controller/WaterMonitorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/dialect/SQLiteDialect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/entity/WaterQuality.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/entity/WaterQuality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/exception/CsvProcessingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/exception/CsvProcessingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/repository/WaterMonitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/repository/WaterMonitorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/service/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/java/com/water/quality/monitoring/service/MonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/WaterqualityApplication_0_main_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/WaterqualityApplication_0_main_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/constants/WhoLimits.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/constants/WhoLimits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/controller/WaterQualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/dialect/SQLiteDialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/dialect/SQLiteDialect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/dto/WaterQualityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/dto/WaterQualityDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/model/WaterQualityAssessment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/model/WaterQualityAssessment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/prathamesh_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prathamesh_services/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/controller/WaterReadingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/src/main/java/com/assessment/monitoringmicroservice/controller/WaterReadingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/src/test/java/com/assessment/monitoringmicroservice/controller/WaterReadingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/service/WaterQualityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/test/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/java/com/waterservices/apigateway/ApiGatewayApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/data/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/controller/MonitoringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/controller/MonitoringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/security/TokenValidationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/security/TokenValidationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/security/TokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/security/TokenValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/test/java/com/waterservices/monitoring/MonitoringControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/test/java/com/waterservices/monitoring/MonitoringControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/controller/QualityAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/controller/QualityAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -195,7 +105,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ApiSecurityApplication">
+  <component name="RunManager" selected="Application.GatewayApplication">
     <configuration name="ApiSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apiauth.API.Security.ApiSecurityApplication" />
       <module name="API-Security" />
@@ -263,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.ApiSecurityApplication" />
         <item itemvalue="Application.WaterqualitymicroserviceApplication" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MonitoringmicroserviceApplication" />
-        <item itemvalue="Application.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -290,5 +200,16 @@
   </component>
   <component name="UnloadedModulesList">
     <module name="prathamesh_services" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
