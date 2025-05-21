@@ -16,32 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Adv_programming_assessment.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/data/users.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/SQLiteDialect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/controller/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitoring.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java/com/assessment2/waterqualitymicroservice/controller/WaterQualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/java/com/waterservices/apigateway/ApiGatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/data/monitoring.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
