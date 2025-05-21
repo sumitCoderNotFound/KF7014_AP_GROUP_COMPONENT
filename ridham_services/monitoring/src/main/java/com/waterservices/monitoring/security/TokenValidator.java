@@ -1,17 +1,19 @@
 package com.waterservices.monitoring.security;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Map;
+
 @Component
 public class TokenValidator {
 
-    private final String securityServiceValidationURL = "http://localhost:8120/api/authenticate/validate";
+    private final String securityServiceValidationURL =
+            "http://localhost:8080/api/authenticate/validate";
 
-    public boolean isTokenValid(String token) {
+    public TokenValidationResponse validateToken(String token) {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
@@ -26,10 +28,13 @@ public class TokenValidator {
                     request,
                     TokenValidationResponse.class
             );
-
-            return response.getBody() != null && response.getBody().isValid();
+            return response.getBody();
         } catch (HttpClientErrorException e) {
-            return false;
+            TokenValidationResponse invalid = new TokenValidationResponse();
+            invalid.setValid(false);
+            invalid.setReason("auth-error");
+            invalid.setMessage("Failed to validate token: " + e.getStatusCode());
+            return invalid;
         }
-}
+    }
 }

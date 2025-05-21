@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c29aa60f-eda1-49bc-a44e-6f3512dc628f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.db" afterDir="false" />
+    <list default="true" id="3340c838-fd47-468c-9193-64343c2e83a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/filters/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/security/TokenValidationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/security/TokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-endpoints.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ridham_services/api-endpoints.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/ApiGatewayApplication/src/main/java/com/example/apigatewayapplication/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ameen_services/waterquality/src/main/java/com/example/waterquality/service/WaterQualityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ridham_services/data/monitoring.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,53 +26,119 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2x8MiO9SCub4kPfy5X43FH1BBPU" />
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xESKAb4Oo20c4S2YWkGHJrjMsO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.MonitoringmicroserviceApplication.executor": "Run",
-    "Spring Boot.WaterqualitymicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "ridham__work__branch",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/prathamesh_services/src/main/java/com/waterservices/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.19310345",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in gateway.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in monitoringmicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in waterqualitymicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WaterQualityControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WaterReadingControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.assessment.monitoringmicroservice in monitoringmicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.assessment2.waterqualitymicroservice in waterqualitymicroservice.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MonitoringmicroserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WaterqualitymicroserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ridham__work__branch&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ridhamsaini/Documents/GitHub/KF7014_AP_GROUP_COMPONENT/prathamesh_services/gateway/src/main/java/com/assessment3/gateway&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gateway/src/main/java/com/assessment3/gateway" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="JUnit.All in gateway">
+    <configuration name="All in gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in monitoringmicroservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="monitoringmicroservice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in waterqualitymicroservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="waterqualitymicroservice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterQualityControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="waterqualitymicroservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment2.waterqualitymicroservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment2.waterqualitymicroservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment2.waterqualitymicroservice.controller.WaterQualityControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.assessment2.waterqualitymicroservice in waterqualitymicroservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="waterqualitymicroservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment2.waterqualitymicroservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment2.waterqualitymicroservice" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.assessment3.gateway.GatewayApplication" />
@@ -84,6 +160,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in gateway" />
+        <item itemvalue="JUnit.All in monitoringmicroservice" />
+        <item itemvalue="JUnit.All in waterqualitymicroservice" />
+        <item itemvalue="JUnit.WaterQualityControllerTests" />
+        <item itemvalue="JUnit.com.assessment2.waterqualitymicroservice in waterqualitymicroservice" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -95,27 +180,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c29aa60f-eda1-49bc-a44e-6f3512dc628f" name="Changes" comment="" />
-      <created>1747315375970</created>
+      <changelist id="3340c838-fd47-468c-9193-64343c2e83a1" name="Changes" comment="" />
+      <created>1747501673216</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747315375970</updated>
-      <workItem from="1747315377062" duration="2373000" />
+      <updated>1747501673216</updated>
+      <workItem from="1747501674242" duration="6000" />
+      <workItem from="1747578691479" duration="3640000" />
+      <workItem from="1747586672678" duration="512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/waterservices/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

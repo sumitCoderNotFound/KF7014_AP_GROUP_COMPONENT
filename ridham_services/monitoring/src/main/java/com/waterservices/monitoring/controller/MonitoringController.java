@@ -1,6 +1,7 @@
 package com.waterservices.monitoring.controller;
 
 import com.waterservices.monitoring.model.WaterQuality;
+import com.waterservices.monitoring.security.TokenValidationResponse;
 import com.waterservices.monitoring.security.TokenValidator;
 import com.waterservices.monitoring.service.MonitoringService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -36,15 +37,28 @@ public class MonitoringController {
         this.monitoringService = monitoringService;
     }
 
-    @GetMapping("/data")
-    public ResponseEntity<String> getData(@RequestHeader("Authorization") String authHeader) {
-        String token = authHeader.replace("Bearer ", "");
 
-        if (!tokenValidator.isTokenValid(token)) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid token");
+    private ResponseEntity<?> authenticateRequest(String authHeader) {
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Missing or invalid Authorization header");
         }
-        return ResponseEntity.ok("Data from Monitoring Microservice");
+
+        String token = authHeader.substring(7);
+
+        TokenValidationResponse validation = tokenValidator.validateToken(token);
+
+        if (!validation.isValid()) {
+            if ("expired".equals(validation.getReason())) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Access token expired");
+            } else {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid token");
+            }
+        }
+
+        // Token is valid
+        return null;
     }
+
     /**
      * Retrieves all water quality records.
      *
@@ -59,7 +73,10 @@ public class MonitoringController {
                     @ApiResponse(responseCode = "204", description = "No water quality records found.")
             }
     )
-    public ResponseEntity<List<WaterQuality>> getAllRecords() {
+    public ResponseEntity<?> getAllRecords(@RequestHeader("Authorization") String authHeader) {
+        ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+        if (authCheck != null) return authCheck;
+
         List<WaterQuality> records = monitoringService.getAllWaterQualityRecords();
         if (!records.isEmpty()) {
             return ResponseEntity.ok(records);
@@ -82,7 +99,10 @@ public class MonitoringController {
                     @ApiResponse(responseCode = "204", description = "No water quality records found.")
             }
     )
-    public ResponseEntity<WaterQuality> getLatestRecord() {
+    public ResponseEntity<?> getLatestRecord(@RequestHeader("Authorization") String authHeader) {
+        ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+        if (authCheck != null) return authCheck;
+
         WaterQuality record = monitoringService.getLatestWaterQualityRecord();
         if (record != null) {
             return ResponseEntity.ok(record);

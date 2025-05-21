@@ -4,19 +4,20 @@ package com.apiauth.API.Security.controller;
  * Response DTO for token validation.
  * This class is used to return the result of token validation to other microservices.
  */
+
 public class TokenValidationResponse {
     private boolean valid;
     private String username;
     private String message;
+    private String reason; // NEW FIELD
 
-    // Default constructor for JSON serialization
-    public TokenValidationResponse() {
-    }
+    public TokenValidationResponse() {}
 
-    public TokenValidationResponse(boolean valid, String username, String message) {
+    public TokenValidationResponse(boolean valid, String username, String message, String reason) {
         this.valid = valid;
         this.username = username;
         this.message = message;
+        this.reason = reason;
     }
 
     public boolean isValid() {
@@ -41,5 +42,13 @@ public class TokenValidationResponse {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 }

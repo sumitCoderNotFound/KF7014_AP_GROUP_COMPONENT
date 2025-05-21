@@ -5,10 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/apiGateway/pom.xml" />
         <option value="$PROJECT_DIR$/monitoring/pom.xml" />
         <option value="$PROJECT_DIR$/quality-analysis/pom.xml" />
-        <option value="$PROJECT_DIR$/apiGateway/pom.xml" />
-        <option value="$PROJECT_DIR$/testing/pom.xml" />
       </list>
     </option>
   </component>

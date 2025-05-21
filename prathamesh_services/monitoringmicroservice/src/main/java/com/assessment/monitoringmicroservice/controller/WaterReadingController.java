@@ -5,10 +5,14 @@ import java.util.Map;
 
 import com.assessment.monitoringmicroservice.model.WaterReading;
 
+import com.assessment.monitoringmicroservice.security.TokenValidationResponse;
+import com.assessment.monitoringmicroservice.security.TokenValidator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,8 +45,33 @@ public class WaterReadingController {
 	private final WaterReadingService waterReadingService;
 	private static final Logger logger = LoggerFactory.getLogger(WaterReadingController.class);
 
+	@Autowired
+	private TokenValidator tokenValidator;
+
+
 	public WaterReadingController(WaterReadingService waterReadingService) {
 		this.waterReadingService = waterReadingService;
+	}
+
+	private ResponseEntity<?> authenticateRequest(String authHeader) {
+		if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+			return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Missing or invalid Authorization header");
+		}
+
+		String token = authHeader.substring(7);
+
+		TokenValidationResponse validation = tokenValidator.validateToken(token);
+
+		if (!validation.isValid()) {
+			if ("expired".equals(validation.getReason())) {
+				return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Access token expired");
+			} else {
+				return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid token");
+			}
+		}
+
+		// Token is valid
+		return null;
 	}
 
 
@@ -65,7 +94,9 @@ public class WaterReadingController {
 			content = @Content(mediaType = "application/json"))
 	})	    
 	@GetMapping("records/latest")
-	public ResponseEntity<?> getLatestRecord() {
+	public ResponseEntity<?> getLatestRecord(@RequestHeader("Authorization") String authHeader) {
+		ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+		if (authCheck != null) return authCheck;
 		try {
 
 			WaterReading latestReading = waterReadingService.getLatestRecord();
@@ -109,7 +140,9 @@ public class WaterReadingController {
 			content = @Content(mediaType = "application/json"))
 	})
 	@GetMapping("/records")
-	public ResponseEntity<?> getAllRecords() {
+	public ResponseEntity<?> getAllRecords(@RequestHeader("Authorization") String authHeader) {
+		ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+		if (authCheck != null) return authCheck;
 		try {
 
 			List<WaterReading> records = waterReadingService.getAllRecords();

@@ -1,13 +1,18 @@
 package com.waterservices.qualityanalysis.controller;
 
+import com.waterservices.qualityanalysis.security.TokenValidationResponse;
+import com.waterservices.qualityanalysis.security.TokenValidator;
 import com.waterservices.qualityanalysis.service.AnalysisResult;
 import com.waterservices.qualityanalysis.service.QualityAnalysisService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,8 +28,34 @@ public class QualityAnalysisController {
 
     private final QualityAnalysisService qualityAnalysisService;
 
+    @Autowired
+    private TokenValidator tokenValidator;
+
     public QualityAnalysisController(QualityAnalysisService qualityAnalysisService) {
         this.qualityAnalysisService = qualityAnalysisService;
+    }
+
+
+
+    private ResponseEntity<?> authenticateRequest(String authHeader) {
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Missing or invalid Authorization header");
+        }
+
+        String token = authHeader.substring(7);
+
+        TokenValidationResponse validation = tokenValidator.validateToken(token);
+
+        if (!validation.isValid()) {
+            if ("expired".equals(validation.getReason())) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Access token expired");
+            } else {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid token");
+            }
+        }
+
+        // Token is valid
+        return null;
     }
 
     /**
@@ -40,7 +71,12 @@ public class QualityAnalysisController {
                     @ApiResponse(responseCode = "404", description = "Analysis result not found.")
             }
     )
-    public ResponseEntity<AnalysisResult> getLatestRecordAnalysisResult() {
+    public ResponseEntity<?> getLatestRecordAnalysisResult(@RequestHeader("Authorization") String authHeader) {
+        ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+        if (authCheck != null) return authCheck;
+
+        qualityAnalysisService.setAuthHeader(authHeader);
+
         if (qualityAnalysisService.getLatestAnalysisResult() == null) {
             return ResponseEntity.notFound().build();
         }
@@ -59,7 +95,10 @@ public class QualityAnalysisController {
                     @ApiResponse(responseCode = "200", description = "Thresholds retrieved.", content = @Content(schema = @Schema(type = "object")))
             }
     )
-    public ResponseEntity<Map<String, Double>> getThresholds() {
+    public ResponseEntity<?> getThresholds(@RequestHeader("Authorization") String authHeader) {
+        ResponseEntity<?> authCheck = authenticateRequest(authHeader);
+        if (authCheck != null) return authCheck;
+
         Map<String, Double> thresholds = new HashMap<>();
         thresholds.put("pHMax", qualityAnalysisService.getPHMaxThreshold());
         thresholds.put("pHMin", qualityAnalysisService.getPHMinThreshold());
