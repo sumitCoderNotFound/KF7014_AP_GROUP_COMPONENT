@@ -163,6 +163,12 @@ public class QualityAnalysisService {
         Map<String, String> alerts = checkThresholds(record);
         AnalysisResult analysisResult = new AnalysisResult();
 
+        // Always calculate TDS
+        Double tds = calculateTDS(record);
+        if (tds != null) {
+            analysisResult.setCalculatedTDS(tds);
+        }
+
         if (!alerts.isEmpty()) {
             analysisResult.setSafeWater(false);
             StringBuilder alertMessage = new StringBuilder("Water Quality Alert!\n");
@@ -175,6 +181,7 @@ public class QualityAnalysisService {
             analysisResult.setSafeWater(true);
             logger.info("Water quality is within acceptable limits for record ObjectId: {}", record.getObjectId());
         }
+
         return analysisResult;
     }
 

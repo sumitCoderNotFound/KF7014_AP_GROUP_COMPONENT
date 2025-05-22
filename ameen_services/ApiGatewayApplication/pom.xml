@@ -36,6 +36,12 @@
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 			<version>4.0.7</version>
 		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-resolver-dns-native-macos</artifactId>
+			<version>4.1.106.Final</version> <!-- Use the version that matches your Netty version -->
+			<classifier>osx-aarch_64</classifier> <!-- Use osx-x86_64 if on Intel Mac -->
+		</dependency>
 
 
 		<!--		<dependency>-->

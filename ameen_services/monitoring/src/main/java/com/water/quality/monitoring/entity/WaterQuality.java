@@ -4,57 +4,55 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * Entity class representing water quality measurements.
- * This class is mapped to the "water_quality" table in the database.
- */
 @Entity
-@Table(name = "water_quality_data")  // Explicit table mapping
+@Table(name = "water_quality")
 public class WaterQuality {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)  // Automatically generate unique UUIDs
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
     @Column(nullable = false)
-    private LocalDateTime timestamp;  // Date and time of the recorded measurement
+    private LocalDateTime timestamp;
 
-    @Column(name = "object_id", nullable = false)
-    private String objectId;  // Unique identifier from the original CSV data
-
-    @Column(nullable = false)
-    private double ph;  // pH level of the water sample
+    @Column(name = "object_id", nullable = false, unique = true)
+    private String objectId;
 
     @Column(nullable = false)
-    private double alkalinity;  // Alkalinity concentration in mg/L
+    private double ph;
 
     @Column(nullable = false)
-    private double conductivity;  // Electrical conductivity of water in µS/cm
+    private double alkalinity;
 
     @Column(nullable = false)
-    private double bod;  // Biochemical Oxygen Demand (BOD) in mg/L
+    private double conductivity;
 
     @Column(nullable = false)
-    private double nitrite;  // Nitrite concentration (NO2-N) in mg/L
+    private double bod;
+
+    @Column(nullable = false)
+    private double nitrite;
 
     @Column(name = "cusol1_mgl", nullable = false)
-    private double cusol1;  // Dissolved Copper concentration in mg/L
+    private double cusol1;
 
     @Column(name = "cusol2_ugl", nullable = false)
-    private double cusol2;  // Dissolved Copper concentration in µg/L
+    private double cusol2;
 
     @Column(name = "fesol1_ugl", nullable = false)
-    private double fesol1;  // Dissolved Iron concentration in µg/L
+    private double fesol1;
 
     @Column(name = "zn_sol_ugl", nullable = false)
-    private double znsol;  // Dissolved Zinc concentration in µg/L
+    private double znsol;
 
-    // Default constructor
+    // Optional: For optimistic locking (only if you plan updates from multiple threads)
+    // @Version
+    // private int version;
+
     public WaterQuality() {}
 
-    // Getters and Setters
+    // Getters and Setters (no setId method to avoid manual ID setting)
     public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
 
     public LocalDateTime getTimestamp() { return timestamp; }
     public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
@@ -89,11 +87,10 @@ public class WaterQuality {
     public double getZnsol() { return znsol; }
     public void setZnsol(double znsol) { this.znsol = znsol; }
 
-    // Override equals and hashCode for object comparison
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof WaterQuality)) return false;
         WaterQuality that = (WaterQuality) o;
         return Double.compare(that.ph, ph) == 0 &&
                 Double.compare(that.alkalinity, alkalinity) == 0 &&
@@ -114,7 +111,6 @@ public class WaterQuality {
         return Objects.hash(id, timestamp, objectId, ph, alkalinity, conductivity, bod, nitrite, cusol1, cusol2, fesol1, znsol);
     }
 
-    // Override toString for easy debugging and logging
     @Override
     public String toString() {
         return "WaterQuality{" +

@@ -1,0 +1,13 @@
+!SESSION 2025-05-21 19:40:14.865 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mohammedameen/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/mohammedameen/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-21 19:40:15.947
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-21 19:40:37.369
+!MESSAGE Logback config file: /Users/mohammedameen/Downloads/Water-monitoring-proj 2/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml

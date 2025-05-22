@@ -3,20 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="AutomaticModuleUnloader">
-    <loaded-modules>
-      <module name="Adv_programming_assessment" />
-      <module name="API-Security" />
-      <module name="ameen_services" />
-      <module name="ridham_services" />
-      <module name="monitoringmicroservice" />
-      <module name="waterqualitymicroservice" />
-      <module name="gateway" />
-    </loaded-modules>
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6b53a927-5971-4915-ae20-73afc6019c6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/java/com/apiauth/API/Security/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/API-Security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/bin/ApiGatewayApplication/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/bin/monitoring/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/bin/monitoring/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/bin/waterquality/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/bin/waterquality/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/bin/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/bin/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/data/MyDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/data/MyDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/monitoring/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/monitoring/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ameen_services/waterquality/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ameen_services/waterquality/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/users.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/prathamesh_services/gateway/src/main/java/com/assessment3/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/apiGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/java/com/waterservices/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/apiGateway/src/main/java/com/waterservices/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/test/java/com/waterservices/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/apiGateway/src/test/java/com/waterservices/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/apiGateway/src/test/java/com/waterservices/apigateway/TimeoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/service/MonitoringService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/monitoring/src/main/java/com/waterservices/monitoring/service/MonitoringService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/AnalysisResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/AnalysisResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java/com/waterservices/qualityanalysis/service/QualityAnalysisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ridham_services/quality-analysis/src/test/java/com/waterservices/qualityanalysis/QualityAnalysisServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sumit_services/api-gateway/src/main/java/com/water/quality/gateway/config/ApiGatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumit_services/monitoring-service/src/main/resources/data/River_Water_Quality_Monitoring.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sumit_services/monitoring-service/src/main/resources/data/River_Water_Quality_Monitoring.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumit_services/quality-check-service/src/main/java/com/water/quality/check/service/QualityCheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sumit_services/quality-check-service/src/main/java/com/water/quality/check/service/QualityCheckService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +67,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -56,31 +77,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiSecurityApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MonitoringmicroserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WaterqualitymicroserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;stagingv2&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Northumbria University/Advanced programming/Group_assessment/Adv_programming_assessment/prathamesh_services/monitoringmicroservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.19310345&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.ApiSecurityApplication.executor": "Run",
+    "Application.GatewayApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MonitoringApplication.executor": "Run",
+    "Application.MonitoringmicroserviceApplication.executor": "Run",
+    "Application.QualityAnalysisApplication.executor": "Run",
+    "Application.QualityCheckServiceApplication.executor": "Run",
+    "Application.WaterqualitymicroserviceApplication.executor": "Run",
+    "Application.com.water.quality.gateway.ApiGatewayApplication.executor": "Run",
+    "JUnit.ApiGatewayApplicationTests.executor": "Run",
+    "JUnit.QualityAnalysisControllerTest.executor": "Run",
+    "JUnit.TimeoutTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "auth__branch",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Northumbria University/Advanced programming/Group_assessment/Adv_programming_assessment/ameen_services/monitoring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.19310345",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.GatewayApplication">
+}]]></component>
+  <component name="RunManager" selected="Application.QualityCheckServiceApplication">
     <configuration name="ApiSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apiauth.API.Security.ApiSecurityApplication" />
       <module name="API-Security" />
@@ -94,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment3.gateway.GatewayApplication" />
-      <module name="gateway" />
+    <configuration name="MonitoringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.waterservices.monitoring.MonitoringApplication" />
+      <module name="monitoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assessment3.gateway.*" />
+          <option name="PATTERN" value="com.waterservices.monitoring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.waterservices.Main" />
-      <module name="prathamesh_services" />
+    <configuration name="QualityAnalysisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.waterservices.qualityanalysis.QualityAnalysisApplication" />
+      <module name="quality-analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.waterservices.*" />
+          <option name="PATTERN" value="com.waterservices.qualityanalysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitoringmicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment.monitoringmicroservice.MonitoringmicroserviceApplication" />
-      <module name="monitoringmicroservice" />
+    <configuration name="QualityCheckServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.water.quality.check.QualityCheckServiceApplication" />
+      <module name="quality-check-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assessment.monitoringmicroservice.*" />
+          <option name="PATTERN" value="com.water.quality.check.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterqualitymicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.assessment2.waterqualitymicroservice.WaterqualitymicroserviceApplication" />
-      <module name="waterqualitymicroservice" />
+    <configuration name="com.water.quality.gateway.ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.water.quality.gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assessment2.waterqualitymicroservice.*" />
+          <option name="PATTERN" value="com.water.quality.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.QualityCheckServiceApplication" />
+        <item itemvalue="Application.com.water.quality.gateway.ApiGatewayApplication" />
+        <item itemvalue="Application.QualityAnalysisApplication" />
         <item itemvalue="Application.ApiSecurityApplication" />
-        <item itemvalue="Application.WaterqualitymicroserviceApplication" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MonitoringmicroserviceApplication" />
+        <item itemvalue="Application.MonitoringApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -72,8 +72,8 @@ public class MonitoringService {
         }
         // Todo: Is this what we are supposed to do each run ?
         // Reset our DB, each run
-        repository.deleteAll();
-        repository.flush();
+//        repository.deleteAll();
+//        repository.flush();
     }
 
     /**

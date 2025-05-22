@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/API-Security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ameen_services/ApiGatewayApplication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ameen_services/monitoring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ameen_services/waterquality/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prathamesh_services/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prathamesh_services/monitoringmicroservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prathamesh_services/waterqualitymicroservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ridham_services/apiGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ridham_services/monitoring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ridham_services/quality-analysis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ridham_services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ridham_services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sumit_services/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sumit_services/monitoring-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sumit_services/quality-check-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

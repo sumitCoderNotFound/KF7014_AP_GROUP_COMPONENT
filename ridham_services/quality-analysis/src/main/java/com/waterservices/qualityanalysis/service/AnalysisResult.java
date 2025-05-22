@@ -14,6 +14,9 @@ public class AnalysisResult {
     @Schema(description = "Indicates whether the water is safe.", example = "true")
     private boolean safeWater;
 
+    @Schema(description = "Total Dissolved Solids (mg/L)", example = "456.78")
+    private double calculatedTDS;
+
     @Schema(description = "Map of alert messages.", example = "{\"pH\": \"pH level is too high.\"}")
     private Map<String, String> alertMessages;
 
@@ -36,5 +39,13 @@ public class AnalysisResult {
 
     public void setAlertMessages(Map<String, String> alertMessages) {
         this.alertMessages = alertMessages;
+    }
+
+    public double getCalculatedTDS() {
+        return calculatedTDS;
+    }
+
+    public void setCalculatedTDS(double calculatedTDS) {
+        this.calculatedTDS = calculatedTDS;
     }
 }

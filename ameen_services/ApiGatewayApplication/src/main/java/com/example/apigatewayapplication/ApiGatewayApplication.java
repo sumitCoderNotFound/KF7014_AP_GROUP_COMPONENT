@@ -16,12 +16,17 @@ public class ApiGatewayApplication {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
+                // Routes for monitoring service
                 .route("monitoring_service", r -> r
                         .path("/api/monitoring/**")
-                        .uri("http://localhost:8102"))
+                        .uri("http://localhost:8082")) // Redirects to MonitoringApplication
+
+                // Routes for water quality service
                 .route("quality_service", r -> r
                         .path("/api/quality/**")
-                        .uri("http://localhost:8103"))
+                        .uri("http://localhost:8081")) // Redirects to WaterQualityApplication
+
                 .build();
     }
 }
+

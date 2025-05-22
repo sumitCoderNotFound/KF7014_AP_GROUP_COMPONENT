@@ -65,19 +65,18 @@ public class QualityCheckService {
     }
 
     private Double calculateTDS(QualityCheckRequest request) {
-        if (request == null) return 0.0; // 🔥 Handle null request case by returning 0.0
+        Double copperMgL = request.getCopperDissolved1(); // mg/L
+        Double copperUgL = request.getCopperDissolved2(); // µg/L
+        Double ironUgL = request.getIronDissolved();      // µg/L
+        Double zincUgL = request.getZincDissolved();      // µg/L
 
-        Double tds = sumIfNotNull(request.getAlkalinity(),
-                request.getConductivity(),
-                request.getBod(),
-                request.getNitrite(),
-                request.getCopperDissolved1(),
-                request.getCopperDissolved2(),
-                request.getIronDissolved(),
-                request.getZincDissolved());
+        if (copperMgL == null || copperUgL == null || ironUgL == null || zincUgL == null) {
+            return null; // Cannot compute accurate TDS
+        }
 
-        System.out.println("🔍 Debug: Calculated TDS = " + (tds != null ? tds : "N/A"));
-        return tds != null ? tds : 0.0; // ✅ Ensure TDS is always a valid number
+        double tds = copperMgL + (copperUgL / 1000.0) + (ironUgL / 1000.0) + (zincUgL / 1000.0);
+        System.out.println("✅ TDS (correctly calculated) = " + tds + " mg/L");
+        return tds;
     }
 
     // ✅ Helper method to handle multiple null values properly
